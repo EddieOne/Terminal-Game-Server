@@ -1,7 +1,6 @@
-Terminal-Game-Server
+Terminal Game Server
 ====================
 
-Terminal GS is a Python 2.7 game socket server that uses MySQL. It's a multiprocess app that can handle a large amount of concurrent clients. 
+Terminal GS is a Python 2.7 game socket server that uses MySQL. It's a multiprocess app that can handle many concurrent users. 
 
-This was a prototype and some issues were not resolved befor moving on. For example, transferring data between processes effiently. This can be achieved by using a 
-treading pool to share data between processes. In the end, we found that it was easier to have multiplue instances of threaded applications for a game server.
+This was a prototype and some issues were not resolved before moving on. For example, efficiently transferring data between processes was never solved in the code. It should be possible to fix by using a treading pool to pipe data between processes. In the end, we found that it was easier to have multiple instances of threaded applications for a game server.
